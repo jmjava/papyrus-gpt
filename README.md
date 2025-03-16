@@ -30,54 +30,75 @@ Steps to Create a Profile
         File → New → Papyrus Model.
         In the Select Diagram window, choose "Profile" and click Finish.
 
-    Define Stereotypes for Spring Boot
-        In the model explorer, right-click the profile → New Child → Stereotype.
-        Name the stereotype (e.g., RestController).
-        Repeat for other stereotypes (Service, FeignClient, Repository, Entity).
+   
+2. Import the Metaclass to Extend
 
-    Extend UML Elements
-        Click on a stereotype (RestController).
-        In Properties → General → Base Class, select Class.
-        This means your @RestController stereotype can only be applied to UML Classes.
+To apply a stereotype to a specific UML metaclass (e.g., Class), you need to import that metaclass into your profile:​
 
-    Add Tagged Values (Optional)
-        Right-click a stereotype → New Child → Property.
-        Example:
-            FeignClient → Property: baseUrl: String
-            Entity → Property: tableName: String
 
-    Save and Export the Profile
-        File → Save.
-        Right-click the profile model → Define Profile.
-        This locks the profile for use in diagrams.
+    Import Metaclass:
+        In the Palette (usually on the right), select Import Metaclass.​
+        wwu-pi.github.io
+        Click on the diagram canvas to open the Element Import dialog.​
+        In the dialog:​
+            Set Name to Class.
+            Set Metaclass to Class.
+      
 
-2. Apply the Profile in the Same Project
+3. Create and Extend the Stereotype
 
-Once you’ve defined the profile, you can apply it within the same UML project.
-Steps:
+Now, define your stereotype and establish its extension to the desired metaclass:​
 
-    Create a Class Diagram:
-        File → New → Papyrus Model.
-        Select "UML" as the model type.
-        Create a Class Diagram (Right-click model → New Diagram → Class Diagram).
+    Create the Stereotype:
+        In the Palette, select Stereotype.​
+        Click on the canvas to place the stereotype.​
+        Name it appropriately (e.g., RestController).​
 
-    Apply the Profile:
-        Go to Model Explorer.
-        Right-click your UML Model (not the profile) → Apply Profile....
-        Select your SpringBootUMLProfile.
+    Create the Extension:
+        In the Palette, select Extension.​
+        Click on your stereotype, then on the Class metaclass you imported earlier.​
+        This creates an extension link, indicating that your stereotype extends the Class metaclass.​
 
-    Use the Profile on UML Classes
-        Add UML classes (Class tool from the palette).
-        Right-click a class → Properties View.
-        Select Applied Stereotypes → Click Apply Stereotype.
-        Choose RestController, Service, etc.
 
-3. Example: Applying the Profile
+![alt text](image-4.png)
 
-Once applied, you can create a Spring Boot UML model:
-Class Name	Stereotype Applied	Tagged Values
-UserController	@RestController	N/A
-UserService	@Service	N/A
-UserRepository	@Repository	N/A
-User	@Entity	tableName = "users"
-ExternalUserClient	@FeignClient	baseUrl = "http://api.example.com"
+
+5. Apply and Test the Profile
+
+After defining your profile:​
+
+    Define the Profile:
+        Right-click on the profile in the Model Explorer.​
+        Select Define Profile.​
+        GitHub+1wwu-pi.github.io+1
+
+    Apply the Profile to a Model:
+        Create or open a UML model where you want to use the stereotype.​
+       
+![alt text](image-5.png)
+
+
+
+    Apply the Stereotype to a Class:
+        In your UML model, create a Class.​
+        In the Properties view, under the Profile tab, apply your RestController stereotype to the class.​
+
+![alt text](image-6.png)
+
+ ![alt text](image-7.png)
+
+ Next give to ChatGPT and have it figure out the XMI that was generated
+
+upload the uml files
+
+![alt text](image-9.png)
+
+
+
+ ![alt text](image-8.png)
+
+
+ I asked ChatGPT to apply the stereotypes and move to code generation and it produced this
+
+
+ ![alt text](image-10.png)
