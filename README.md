@@ -102,3 +102,11 @@ upload the uml files
 
 
  ![alt text](image-10.png)
+
+
+ # Running the python parser:
+
+ Note:  simple-2.py is first version of parser to take the .uml files created by Papyrus and parse into information what we are going to send into the ChatGPT prompt
+
+profile_xmi_path = "/home/ubuntu/Documents/github/papyrus-gpt/src/chatmodel.profile.uml" 
+odel_xmi_path = "/home/ubuntu/Documents/github/papyrus-gpt/src/model.uml"
