@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:chatmodel="http:///schemas/chatmodel/_X4zOAAKDEfC1G5JZ6Xl3yA/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/chatmodel/_X4zOAAKDEfC1G5JZ6Xl3yA/1 chatmodel.profile.uml#_X4zOAQKDEfC1G5JZ6Xl3yA">
+  <uml:Model xmi:id="_A5hZYAKEEfC1G5JZ6Xl3yA" name="model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_A6IdYAKEEfC1G5JZ6Xl3yA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Z2MSUAKEEfC1G5JZ6Xl3yA" name="POCService"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_IYsrQAKFEfC1G5JZ6Xl3yA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IYugcAKFEfC1G5JZ6Xl3yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="chatmodel.profile.uml#_X4zOAQKDEfC1G5JZ6Xl3yA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="chatmodel.profile.uml#_gSpnIAJ-EfC1G5JZ6Xl3yA"/>
+    </profileApplication>
+  </uml:Model>
+  <chatmodel:Service xmi:id="_1vqeIAKFEfC1G5JZ6Xl3yA" base_Class="_Z2MSUAKEEfC1G5JZ6Xl3yA"/>
+</xmi:XMI>
